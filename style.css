@@ -1,0 +1,183 @@
+/* body{
+    background-color: #f8d4bc;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+h4{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0px;
+    color: #3b3b3a;
+}
+.par{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0px;
+    color: #3b3b3a;
+}
+.price{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0px;
+    color: #3b3b3a;
+}
+.container{
+    display: flex;
+}
+.item{
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    flex: 1;
+    margin: 3px;
+    border-radius: 5px;
+}
+.selected{
+    flex: 4;
+}
+.selected h4{
+    background-color: #fdfdfd;
+    font-size: 40px;
+    transition: all 1s ease-in;
+}
+.selected .par{
+    background-color: #fdfdfd;
+    font-size: 17px;
+    transition: all 1s ease-in;
+}
+.selected .price{
+    background-color: #fdfdfd;
+    font-size: 25px;
+    transition: all 1s ease-in;
+}
+label{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: #3b3b3a;
+    padding: 5px;
+}
+textarea, input {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    padding: 5px;
+    font-size: 15px;
+    color: #3b3b3a;
+}
+.btn{
+    padding: 10px;
+    width: 20%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: #fdfdfd;
+    background-color: #53cffe;
+}
+
+.one{
+    background-image: url('https://plus.unsplash.com/premium_photo-1675975635390-6ca4d5c056b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29sb3NzZXVtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60');
+}
+.two{
+    background-image: url('https://images.unsplash.com/photo-1581211040073-0f44ce8fb8ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHZhdGljYW4lMjBjaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60');
+}
+.three{
+    background-image: url('https://images.unsplash.com/photo-1596627116790-af6f46dddbda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHJldmklMjBmb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60');
+}
+.four{
+    background-image: url('https://images.unsplash.com/photo-1668629510988-197eaafdf3fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGxhZ28lMjBjb21vfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60');
+}
+.five{
+    background-image: url('https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHVvbW8lMjBtaWxhbm98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+}
+.six{
+    background-image: url('https://images.unsplash.com/photo-1644505109491-36e1be1363c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fFVmZml6aSUyMEdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+}
+.seven{
+    background-image: url('https://images.unsplash.com/photo-1550948390-6eb7fa773072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fEJvYm9saSUyMEdhcmRlbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60');
+}
+.eight{
+    background-image: url('https://images.unsplash.com/photo-1668269379818-37986235682d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGZsb3JlbmNlJTIwZHVvbW98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+}
+
+@media all and (max-width: 500px){
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .selected h4{
+        font-size: 14px;
+    }
+    .selected .par{
+        font-size: 12px;
+    }
+    .selected .price{
+        font-size: 10px;
+    }
+    .par{
+        margin-top: 90px;
+        margin-left: 3px;
+    }
+    h4{
+        margin-left: 3px;
+    }
+} */
+
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #1c788c;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#pictures{
+    width: 700px;
+}
+.btn{
+    background-color: #E2F6CA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: none;
+}
